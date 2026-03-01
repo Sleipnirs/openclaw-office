@@ -1,0 +1,10 @@
+cat > vercel.json <<'JSON'
+{
+  "rewrites": [
+    {
+      "source": "/cluster/:path*",
+      "destination": "http://3.12.165.88:8000/cluster/:path*"
+    }
+  ]
+}
+JSON
