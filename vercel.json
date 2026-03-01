@@ -1,6 +1,10 @@
 {
   "routes": [
     {
+      "src": "^/ws$",
+      "dest": "http://3.12.165.88:8000/ws"
+    },
+    {
       "src": "^/cluster/(.*)",
       "dest": "http://3.12.165.88:8000/cluster/$1"
     }
